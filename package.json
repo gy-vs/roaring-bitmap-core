@@ -1,0 +1,16 @@
+{
+  "name": "roaring32",
+  "version": "0.1.0",
+  "description": "32-bit unsigned integer set: high-16-bit sharding with array/bitmap/run containers",
+  "license": "MIT",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
