@@ -1,0 +1,23 @@
+{
+  "name": "roaring-bitmap-core",
+  "version": "1.0.0",
+  "description": "A 32-bit unsigned integer set sharded by the high 16 bits, with array/bitmap/run containers that convert based on density.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/"
+  },
+  "keywords": [
+    "roaring",
+    "bitmap",
+    "set",
+    "uint32",
+    "run-length-encoding"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
+  }
+}
